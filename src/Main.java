@@ -1,14 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         BonusMilesService service = new BonusMilesService();
-        int ticketPrice = 1000;
-        int miles = service.milesAmount(ticketPrice);
+        int miles = service.milesAmount(1000);
         System.out.println("На вашем счету: " + miles + " миль");
 
-        BonusMilesService service1 = new BonusMilesService();
-        int ticketPrice1 = 2000;
-        int miles1 = service1.milesAmount(ticketPrice1);
+        int miles1 = service.milesAmount(2000);
         System.out.println("На вашем счету: " + miles1 + " миль");
+
+        int miles2 = service.milesAmount(35000);
+        System.out.println("На вашем счету: " + miles2 + " миль");
 
     }
 }
